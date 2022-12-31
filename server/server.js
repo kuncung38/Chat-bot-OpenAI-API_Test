@@ -1,9 +1,7 @@
 import express from "express";
 
 import * as dotenv from "dotenv";
-if (process.env.environment !== "production") {
-	dotenv.config();
-}
+dotenv.config();
 
 import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
