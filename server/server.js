@@ -1,11 +1,14 @@
 import express from "express";
+
 import * as dotenv from "dotenv";
+if (process.env.environment !== "production") {
+	dotenv.config();
+}
+
 import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
 
 const port = process.env.port || 3000;
-
-dotenv.config();
 
 const configuration = new Configuration({
 	apiKey: process.env.OPENAI_API_KEY,
