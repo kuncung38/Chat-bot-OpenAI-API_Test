@@ -2,7 +2,8 @@ import "./style.css";
 import bot from "./assets/bot.svg";
 import user from "/assets/user.svg";
 
-const origin = `http://localhost:3000`;
+// const origin = `http://localhost:3000`;
+const origin = `https://kuncung-chat-bot.onrender.com`;
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
